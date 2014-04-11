@@ -15,22 +15,31 @@
  */
 
 if ($_SERVER['REMOTE_ADDR']=='127.0.0.1') {
-    define('WP_ENV', 'development');
+    define('WP_ENV', 'dev');
 } else {
-    define('WP_ENV', 'production');
+    define('WP_ENV', 'prod');
 }
 
-// MySQL settings - You can get this info from your web host //
-if (WP_ENV == 'development') {
+if (WP_ENV == 'dev') {
+    define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . '/mattdingle.dev/wordpress');
+    define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT']);
+    define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . 'mattdingle.dev/wp-content');
+    define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . 'mattdingle.dev/wp-content');
+
     define('DB_NAME', 'mattdingle');
     define('DB_USER', 'mattdingle');
     define('DB_PASSWORD', 'Redeemed123');
     define('DB_HOST', 'localhost');
 } else {
-    define('DB_NAME', 'mydb-prod');
+    define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
+    define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
+    define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
+    define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
+
+    define('DB_NAME', 'efeqdev-prod');
     define('DB_USER', 'username');
-    define('DB_PASSWORD', 'pasdword');
-    define('DB_HOST', 'mysql.mysite.com');
+    define('DB_PASSWORD', 'password');
+    define('DB_HOST', 'mysql.efeqdev.com');
 } 
 
 /** Database Charset to use in creating database tables. */
@@ -38,11 +47,6 @@ define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
-
-define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
-define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
-define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
-define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -70,7 +74,7 @@ define('NONCE_SALT',       'put your unique phrase here');
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'mattdingle_';
 
 /**
  * WordPress Localized Language, defaults to English.
@@ -89,7 +93,7 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* That's all, stop editing! Happy blogging. */
 
