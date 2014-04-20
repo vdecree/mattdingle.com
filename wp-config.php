@@ -21,10 +21,10 @@ if ($_SERVER['REMOTE_ADDR']=='127.0.0.1') {
 }
 
 if (WP_ENV == 'dev') {
-    define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . '/mattdingle.dev/wordpress');
-    define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT']);
-    define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . 'mattdingle.dev/wp-content');
-    define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . 'mattdingle.dev/wp-content');
+    define('WP_SITEURL', 'http://mattdingle.dev/wordpress');
+    define('WP_HOME', 'http://mattdingle.dev');
+    define('WP_CONTENT_DIR', 'http://mattdingle.dev/wp-content');
+    define('WP_CONTENT_URL', 'http://mattdingle.dev/wp-content');
 
     define('DB_NAME', 'mattdingle');
     define('DB_USER', 'mattdingle');
@@ -32,7 +32,7 @@ if (WP_ENV == 'dev') {
     define('DB_HOST', 'localhost');
 } else {
     define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
-    define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
+    define('WP_HOME', 'http://' . $_SERVER['SERVER_NAME']);
     define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
     define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
 
