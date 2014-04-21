@@ -1,0 +1,102 @@
+/*
+
+Footer
+======
+
+Styles for the footer element
+
+*/
+
+footer[role="footer"] {
+	width: 100%;
+	background-color: $black;
+	overflow: hidden;
+	@include clearfix;
+	color: $white;
+
+	.gig__feed--mini{
+		@include span-columns(5);
+
+		@media screen and (max-width: $small) {
+ 			@include fill-parent;
+ 			margin-right: 0;
+ 			@include remit("margin-bottom", 24);
+		}
+
+		ul{
+
+			li{
+				list-style: none;
+				@include remit("margin-bottom", 10);
+
+			}
+
+		}
+
+	}
+
+	a{
+		color: $white;
+
+		&:hover{
+			color: $comp-color;
+		}
+
+	}
+
+	em{
+		color: lighten($black, 40);
+
+		a{
+
+			color: lighten($black, 40);
+
+		}
+
+	}
+
+	.contact__detail{
+		@include span-columns(3);
+		@include shift(4);
+
+		@media screen and (max-width: $regular) {
+ 			@include span-columns(4);
+			@include shift(3);
+		}
+
+		@media screen and (max-width: $small) {
+ 			@include fill-parent;
+ 			margin-left: 0;
+		}
+
+	}
+
+	h3{
+		color: lighten($black, 40);
+	}
+
+	.container{
+		background-image: url("../img/foot-logo.png");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+
+}
+
+.foot__note{
+	text-align: center;
+	background-color: darken($black, 5);
+	@include remit("padding-top", 20);
+	@include remit("padding-bottom", 20);
+
+	p{
+		color: lighten($black, 40);
+		@include font-size(14);
+		margin-bottom: 0;
+	}
+
+	@media screen and (max-width: $small) {
+			@include remit("padding", 20);
+	}
+
+}

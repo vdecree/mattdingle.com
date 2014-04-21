@@ -1,0 +1,30 @@
+/*
+
+Modules
+=======
+
+Put your 'modules' here
+
+*/
+div[id*="banner--"]{
+	width: 100%;
+	overflow: hidden;
+	@include remit(height, 666);
+	text-align: center;
+	&:before {
+	  content: '';
+	  display: inline-block;
+	  font-size: 0;
+	  height: 100%;
+	  vertical-align: middle;
+	  margin-right: -0.25em; /* Adjusts for spacing */
+	}
+	@include media($tabletLandscape) {
+		@include remit(height, 444);
+  }
+}
+
+#banner--home{
+	background: url("../img/banner-home.jpg") no-repeat 50% 50%;
+	background-size: cover;
+}

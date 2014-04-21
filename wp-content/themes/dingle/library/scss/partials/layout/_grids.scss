@@ -1,0 +1,29 @@
+@import "bourbon"; 
+@import "neat"; 
+@import "neat-helpers"; // or "neat-helpers" when in Rails
+
+// Change the grid settings
+$column: 60px;
+$gutter: 30px;
+$grid-columns: 12;
+$max-width: 1020px;
+
+
+// Define your breakpoints
+$navTrigger: new-breakpoint(min-width 820px 8);
+$desktopWide: new-breakpoint(max-width 1280px 8);
+$desktop: new-breakpoint(max-width 1200px 8);
+$tabletLandscape: new-breakpoint(max-width 1024px 8);
+$tablet: new-breakpoint(max-width 768px 8);
+$mobile: new-breakpoint(max-width 480px 4);
+
+.container{
+	max-width: $max-width;
+	width: 100%;
+	margin: 0 auto;
+	@extend %cf;
+	@include media($tabletLandscape) {
+      @include remit(padding-left, 24);
+      @include remit(padding-right, 24);
+  }
+}

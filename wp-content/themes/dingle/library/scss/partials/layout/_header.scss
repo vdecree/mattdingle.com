@@ -1,0 +1,46 @@
+/*
+
+Header
+======
+
+Styles for the header element
+
+*/
+
+header[role='banner'] {
+	background: $black;
+	@include remit(padding-top, 20);
+	@include remit(padding-bottom, 20);
+	.container{
+		position: relative;
+	}
+}
+
+.hide {
+  display: none;
+}
+
+.icon{
+	width: 100%;
+}
+
+.shape-logo{
+	fill: $comp-color;
+}
+
+#logo{
+	width: 160px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 43px;
+	&:hover{
+		.shape-logo{
+			fill: lighten($comp-color,20);
+		}
+	}
+	@include media($tabletLandscape) {
+		left: 24px;
+  }
+}

@@ -1,0 +1,157 @@
+// sans-serif
+
+$arial: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$lucidagrande: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+$trebuchet: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+$verdana: Verdana, Geneva, sans-serif;
+
+// serif
+
+$baskerville: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+$georgia: Georgia, Times, "Times New Roman", serif;
+$lucidabright: "Lucida Bright", Georgia, serif;
+$tnr: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+
+// monospaced
+
+$consolas: Consolas, monaco, monospace;
+$courier: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+$monaco: Monaco, Consolas, "Lucida Console", monospace;
+
+@font-face { 
+    font-family: 'heuristicabold_italic'; 
+    src: url("../fonts/Heuristica-BoldItalic-webfont.eot"); 
+    src: url("../fonts/Heuristica-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/Heuristica-BoldItalic-webfont.woff") format("woff"), 
+    url("../fonts/Heuristica-BoldItalic-webfont.ttf") format("truetype"), 
+    url("../fonts/Heuristica-BoldItalic-webfont.svg#heuristicabold_italic") format("svg"); 
+    font-weight: normal; font-style: normal; 
+}
+
+@font-face { 
+    font-family: 'heuristicabold'; 
+    src: url("../fonts/Heuristica-Bold-webfont.eot"); 
+    src: url("../fonts/Heuristica-Bold-webfont.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/Heuristica-Bold-webfont.woff") format("woff"), 
+    url("../fonts/Heuristica-Bold-webfont.ttf") format("truetype"), 
+    url("../fonts/Heuristica-Bold-webfont.svg#heuristicabold") format("svg"); 
+    font-weight: normal; font-style: normal; 
+}
+
+@font-face { 
+    font-family: 'heuristicaitalic'; 
+    src: url("../fonts/Heuristica-Italic-webfont.eot"); 
+    src: url("../fonts/Heuristica-Italic-webfont.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/Heuristica-Italic-webfont.woff") format("woff"), 
+    url("../fonts/Heuristica-Italic-webfont.ttf") format("truetype"), 
+    url("../fonts/Heuristica-Italic-webfont.svg#heuristicaitalic") format("svg"); 
+    font-weight: normal; font-style: normal; 
+}
+
+@font-face { 
+    font-family: 'heuristicaregular'; 
+    src: url("../fonts/Heuristica-Regular-webfont.eot"); 
+    src: url("../fonts/Heuristica-Regular-webfont.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/Heuristica-Regular-webfont.woff") format("woff"), 
+    url("../fonts/Heuristica-Regular-webfont.ttf") format("truetype"), 
+    url("../fonts/Heuristica-Regular-webfont.svg#heuristicaregular") format("svg"); 
+    font-weight: normal; font-style: normal; 
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansbold_italic';
+    src: url('../fonts/OpenSans-BoldItalic-webfont.eot');
+    src: url('../fonts/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-BoldItalic-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-BoldItalic-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-BoldItalic-webfont.svg#open_sansbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('../fonts/OpenSans-ExtraBold-webfont.eot');
+    src: url('../fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-ExtraBold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-ExtraBold-webfont.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('../fonts/OpenSans-Italic-webfont.eot');
+    src: url('../fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Italic-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/OpenSans-Light-webfont.eot');
+    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/OpenSans-Semibold-webfont.eot');
+    src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$openReg: 'open_sansregular', Arial, Helvetica, sans-serif;
+$openBold: 'open_sansbold', Arial, Helvetica, sans-serif;
+$openBoldItl: 'open_sansbold_italic', Arial, Helvetica, sans-serif;
+$openXtraBold: 'open_sansextrabold', Arial, Helvetica, sans-serif;
+$openLight: 'open_sanslight', Arial, Helvetica, sans-serif;
+$openItl: 'open_sansitalic', Arial, Helvetica, sans-serif;
+$openSemi: 'open_sanssemibold', Arial, Helvetica, sans-serif;
+
+$heuReg: 'heuristicaregular', Georgia, Times, serif;
+$heuItl: 'heuristicaitalic', Georgia, Times, serif;
+$heuBold: 'heuristicabold', Georgia, Times, serif;
+$heuBoldItl: 'heuristicabold_italic', Georgia, Times, serif;

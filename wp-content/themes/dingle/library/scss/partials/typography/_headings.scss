@@ -1,0 +1,101 @@
+/*
+
+Headings
+========
+
+    <h1>This is the primary headline</h1>
+    <h2>This is the secondary headline</h2>
+    <h3>This is the tertiary headline</h3>
+    <h4>This is the average headline</h4>
+    <h5>This is the small headline</h5>
+    <h6>This is the micro headline</h6>
+
+*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $header-font;
+	font-weight: normal;
+}
+
+h1,  .h1 {
+
+	@include font-size(30);
+	font-family: $openBold;
+
+	&.prime{
+		@include font-size(96);
+		font-family: $openBold;
+		text-transform: uppercase;
+		color: $white;
+		display: block;
+		position: relative;
+		@include remit("letter-spacing", 20);
+		&:after{
+			content: "";
+			width: 36%;
+			display: inline-block;
+			border-bottom: 1px solid $comp-color;
+			position: absolute;
+			@include remit("bottom", -15);
+			left: 50%;
+			margin-left: -19.5%;
+			@include media($tabletLandscape) {
+				margin-left: -19.5%;
+		  }
+		  @include media($mobile) {
+				margin-left: -20.5%;
+		  }
+		}
+		@include media($tabletLandscape) {
+			@include font-size(46);
+			@include remit("margin-right", -20);
+	  }
+
+	}
+}
+
+h2, .h2 {
+	@include font-size(24);
+	font-family: $openBold;
+
+	&.hdin--undln{
+		@include remit("letter-spacing", 3);
+		@include remit("margin-right", -3);
+		position: relative;
+
+		&:after{
+			content: "";
+			width: 160px;
+			display: inline-block;
+			border-bottom: 1px solid $comp-color;
+			position: absolute;
+			@include remit("bottom", -10);
+			left: 50%;
+			z-index: 999;
+			margin-left: -80px;
+		}
+
+	}
+
+}
+
+h3, .h3 {
+	@include font-size(20);
+	font-family: $openBold;
+}
+
+h4, .h4 {
+
+}
+
+h5, .h5 {
+
+}
+
+h6, .h6 {
+
+}
+
+.hdin--capped{
+	text-transform: uppercase;
+}
