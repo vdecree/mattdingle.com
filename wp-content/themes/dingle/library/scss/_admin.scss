@@ -12,14 +12,24 @@ start customizing. All admin functions are located in lib/admin/
 ******************************************************************/
 
 
-#wpadminbar{
-	background: $comp-color;
-}
+// #wpadminbar{
+// 	background: $black;
+// }
 
-#wpadminbar #adminbarsearch:before, #wpadminbar .ab-icon:before, #wpadminbar .ab-item:before{
-	color: $white !important;
-}
+// #wpadminbar #adminbarsearch:before, #wpadminbar .ab-icon:before, #wpadminbar .ab-item:before{
+// 	color: $white !important;
+// }
 
-#wpadminbar a, #wpadminbar a img, #wpadminbar a img:hover, #wpadminbar a:hover {
-	background: $comp-color;
-}
+// #wpadminbar a, #wpadminbar a img, #wpadminbar a img:hover, #wpadminbar a:hover {
+// 	background: $comp-color;
+// }
+
+// #wp-admin-bar-root-default{
+// 	li{
+// 		a{
+// 			&:hover{
+// 				background: darken($comp-color, 20);
+// 			}
+// 		}
+// 	}
+// }

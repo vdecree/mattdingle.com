@@ -61,6 +61,7 @@ h2, .h2 {
 	&.hdin--undln{
 		@include remit("letter-spacing", 3);
 		@include remit("margin-right", -3);
+		@include remit("margin-bottom", 34);
 		position: relative;
 
 		&:after{

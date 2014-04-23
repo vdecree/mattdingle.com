@@ -691,6 +691,9 @@ div[role='main'] .container, div[role='main'] .bio__intro, div[role='main'] .lat
   margin-bottom: 0.3125rem;
 }
 
+#gig__list {
+  background: #d8d8d8;
+}
 #gig__list h2 {
   text-align: center;
   display: block;
@@ -728,6 +731,23 @@ div[role='main'] .container, div[role='main'] .bio__intro, div[role='main'] .lat
 
 .latest__tracks h2 {
   text-align: center;
+}
+.latest__tracks .track__item {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+.latest__tracks .track__item:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 600px) {
+  .latest__tracks .track__item {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+  }
 }
 
 /*
@@ -941,6 +961,8 @@ h2.hdin--undln, .h2.hdin--undln {
   letter-spacing: 0.1875rem;
   margin-right: -3px;
   margin-right: -0.1875rem;
+  margin-bottom: 34px;
+  margin-bottom: 2.125rem;
   position: relative;
 }
 h2.hdin--undln:after, .h2.hdin--undln:after {
@@ -1525,7 +1547,7 @@ div[id*="banner--"]:before {
 }
 
 #banner--home {
-  background: url("../img/banner-home.jpg") no-repeat 50% 50%;
+  background: url("../../library/images/banner-home.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 
@@ -1645,3 +1667,15 @@ Shame CSS
     filter: grayscale(100%);
   }
 }
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Admin Stylesheet
+
+If you like living on the edge, you can add some styles here to
+customize the dashboard and WordPress admin area. This stylesheet
+is empty, but you can just start dropping your styles here to
+start customizing. All admin functions are located in lib/admin/
+
+******************************************************************/

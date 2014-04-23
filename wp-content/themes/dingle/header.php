@@ -48,7 +48,7 @@
 		<header id="header" role="banner">
 			<div class="container">
 
-					<a href="#" id="logo">
+					<a href="<?php echo home_url(); ?>" id="logo">
 						<svg viewBox="0 0 353.59 93.53" class="icon shape-logo">
 						  <use xlink:href="#shape-logo"></use>
 						</svg>

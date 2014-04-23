@@ -154,6 +154,8 @@ div[role='main'] {
 
 #gig__list{
 
+	background: darken($light-grey, 10);
+
 	h2{
 		text-align: center;
 		display: block;
@@ -180,6 +182,17 @@ div[role='main'] {
 
 	h2{
 		text-align: center;
+	}
+
+	.track__item{
+		@include span-columns(6);
+
+		@media screen and (max-width: $small) {
+ 			@include fill-parent;
+ 			float: none;
+ 			@include remit("margin-bottom", 20);
+		}
+
 	}
 
 }
