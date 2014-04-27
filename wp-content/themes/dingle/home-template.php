@@ -43,7 +43,7 @@ $the_query = new WP_Query( $args );
 	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 		<div class="gig__date-<?php echo $gigNumber++; ?>">
 			<p class="gig__location"><?php the_field( "gig_location" ); ?></p>
-			<time datetime="<?php echo the_field( "gig_datetime" ); ?>"><?php the_field( "gig_datetime" ); ?></time>
+			<time datetime="<?php echo date_i18n( "c" , get_field("gig_datetime") ); ?>"><?php echo date_i18n( "jS M, Y @ g:i a", get_field("gig_datetime") ); ?></time>
 			<?php if( get_field('gig_fee') ): ?>
 			<span class="btn btn--small btn--gold">Entry Fee &pound;<?php the_field( "gig_fee" ); ?></span>
 			<?php endif; ?>
@@ -73,8 +73,7 @@ $song_query = new WP_Query( $args );
 <?php endif; ?>
 </div>
 
-</div>
  
 <?php wp_reset_query();  // Restore global post data stomped by the_post(). ?>
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

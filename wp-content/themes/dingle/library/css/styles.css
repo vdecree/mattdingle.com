@@ -433,6 +433,44 @@ Figure & Figcaption
     </figure>
 
 */
+.swatch {
+  clear: both;
+  float: left;
+  max-width: 640px;
+}
+.swatch li {
+  border: 1px solid black;
+  border-radius: 8px;
+  float: left;
+  height: 120px;
+  list-style: none;
+  margin: 0 4px 4px 0;
+  width: 120px;
+}
+
+.theme-colors li {
+  background-color: #232323;
+}
+.theme-colors li:nth-child(2) {
+  background-color: #c69c6d;
+}
+.theme-colors li:nth-child(3) {
+  background-color: red;
+}
+.theme-colors li:nth-child(4) {
+  background-color: #777777;
+}
+.theme-colors li:nth-child(5) {
+  background-color: #cccccc;
+}
+.theme-colors li:nth-child(6) {
+  clear: both;
+  background-color: white;
+}
+.theme-colors li:nth-child(7) {
+  background-color: #232323;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -750,6 +788,79 @@ div[role='main'] .container, div[role='main'] .bio__intro, div[role='main'] .lat
   }
 }
 
+.content__left {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+}
+.content__left:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 760px) {
+  .content__left {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+  }
+}
+
+#side__bar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 8.5298%;
+  margin-right: 0;
+}
+#side__bar:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 760px) {
+  #side__bar {
+    width: 100%;
+    margin: 0;
+  }
+}
+#side__bar .side__gigfeed {
+  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 760px) {
+  #side__bar .side__gigfeed {
+    display: none;
+  }
+}
+#side__bar .side__gigfeed ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+}
+#side__bar .side__gigfeed ul li p {
+  margin-bottom: 0;
+}
+#side__bar .side__gigfeed ul li time {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  color: #a5a5a5;
+}
+#side__bar .side__gigfeed ul li .gig_fee {
+  color: #a5a5a5;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+#side__bar .btn {
+  display: block;
+  text-align: center;
+}
+
 /*
 
 Aside
@@ -789,6 +900,34 @@ footer[role="footer"] .gig__feed--mini {
 footer[role="footer"] .gig__feed--mini:last-child {
   margin-right: 0;
 }
+footer[role="footer"] .gig__feed--mini time {
+  display: inline;
+  color: #8c8c8c;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+footer[role="footer"] .gig__feed--mini .gig__fee {
+  color: white;
+  font-family: "open_sansregular", Arial, Helvetica, sans-serif;
+  color: #8c8c8c;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  margin-bottom: 0;
+  cursor: text;
+}
+footer[role="footer"] .gig__feed--mini .btn:hover {
+  background-color: #c69c6d;
+}
+footer[role="footer"] .gig__feed--mini .gig__location {
+  margin-bottom: 0;
+}
 @media screen and (max-width: 600px) {
   footer[role="footer"] .gig__feed--mini {
     width: 100%;
@@ -801,6 +940,9 @@ footer[role="footer"] .gig__feed--mini ul li {
   list-style: none;
   margin-bottom: 10px;
   margin-bottom: 0.625rem;
+  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
+  border-bottom: 1px solid #3f3f3f;
 }
 footer[role="footer"] a {
   color: white;
@@ -846,9 +988,14 @@ footer[role="footer"] h3 {
   color: #898989;
 }
 footer[role="footer"] .container, footer[role="footer"] .bio__intro, footer[role="footer"] .latest__tracks {
-  background-image: url("../img/foot-logo.png");
+  background-image: url("../images/foot-logo.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+@media screen and (max-width: 600px) {
+  footer[role="footer"] .container, footer[role="footer"] .bio__intro, footer[role="footer"] .latest__tracks {
+    background-image: none;
+  }
 }
 
 .foot__note {
@@ -867,6 +1014,9 @@ footer[role="footer"] .container, footer[role="footer"] .bio__intro, footer[role
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
   margin-bottom: 0;
+}
+.foot__note a:link {
+  color: #898989;
 }
 @media screen and (max-width: 600px) {
   .foot__note {
@@ -900,6 +1050,7 @@ h1, .h1 {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
   font-family: "open_sansbold", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
 }
 h1.prime, .h1.prime {
   font-size: 96px;
@@ -1166,8 +1317,8 @@ a.menu-link {
   color: white;
   text-decoration: none;
 }
-a.menu-link:focus {
-  outline: none;
+a.menu-link:focus, a.menu-link:hover {
+  outline: 0;
 }
 
 @media screen and (min-width: 820px) {
@@ -1335,8 +1486,9 @@ a.nav__link {
   text-decoration: none;
 }
 @media screen and (min-width: 820px) {
-  a.nav__link:hover {
+  a.nav__link:hover, a.nav__link:focus {
     color: #c69c6d;
+    outline: none;
   }
 }
 
@@ -1567,6 +1719,130 @@ Scratch File
 This is for code to exist before it's re-factored put in it's place
 
 */
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: IE Stylesheet
+
+So instead of using the respond.js file to add media query support
+to IE, we're going to use SASS to create an easily readable css file.
+Here, we import all the styles the standard stylesheet gets, only
+without the media queries. No need to worry about editing anything!
+
+******************************************************************/
+/******************************************************************
+IMPORTS & DEPENDENCIES
+Remember, all the BASE styles are called already since IE can
+read those. Below, we need to import only the stuff IE can't
+understand (what's inside the media queries). We also need to
+import the mixins file so SASS can understand the variables.
+******************************************************************/
+/*
+you can call the larger styles if you want, but there's really no need
+*/
+/******************************************************************
+ADDITIONAL IE FIXES
+These fixes are now ONLY seen by IE, so you don't have to worry
+about using prefixes, although it's best practice. For more info
+on using Modernizr classes, check out this link:
+http://www.modernizr.com/docs/
+******************************************************************/
+/*
+For example, you can use something like:
+
+.no-textshadow .class { ... }
+
+You can also target specific versions by using the classes applied to
+the html element. These can sometimes change, so take a look inside the
+header.php file to see what they are:
+
+
+.lt-ie8 .class { ... }
+
+*/
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Admin Stylesheet
+
+If you like living on the edge, you can add some styles here to
+customize the dashboard and WordPress admin area. This stylesheet
+is empty, but you can just start dropping your styles here to
+start customizing. All admin functions are located in lib/admin/
+
+******************************************************************/
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Login Stylesheet
+
+This stylesheet is loaded (if admin.php is setup in your
+functions file) on the login page. This way you can style
+the login page. It won't affect any other page, admin or front-end.
+
+For more info, check out the codex:
+http://codex.wordpress.org/Creating_Admin_Themes
+
+******************************************************************/
+/* the form box */
+/*
+This is the Wordpress logo in the admin area.
+You'll have to load your own images and mess
+with the width and height.
+*/
+.login h1 a {
+  background: url(../images/login-logo.png) no-repeat top center;
+  /* make sure to replace this! */
+  width: 326px;
+  height: 67px;
+  text-indent: -9999px;
+  overflow: hidden;
+  padding-bottom: 15px;
+  display: block;
+}
+
+form {
+  margin-left: 8px;
+  padding: 26px 24px 46px;
+  font-weight: normal;
+  background: white;
+  border: 1px solid #E5E5E5;
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+body form .input {
+  font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  width: 97%;
+  padding: 3px;
+  margin-top: 2px;
+  margin-right: 6px;
+  margin-bottom: 16px;
+  border: 1px solid #E5E5E5;
+  background: #FBFBFB;
+  outline: none;
+  box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
+}
+
+/*
+You'll have to override some of the default styles
+but since we're referencing the id, it should be easy.
+*/
+/* login button*/
+/*
+retina login logo
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .login h1 a {
+    background: url(../images/login-logo@2x.png) no-repeat top center;
+    /* make sure to replace this! */
+  }
+}
 /*
 Shame CSS
      This is not a dumping ground. It is a staging area for hacks that are
@@ -1667,15 +1943,3 @@ Shame CSS
     filter: grayscale(100%);
   }
 }
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Admin Stylesheet
-
-If you like living on the edge, you can add some styles here to
-customize the dashboard and WordPress admin area. This stylesheet
-is empty, but you can just start dropping your styles here to
-start customizing. All admin functions are located in lib/admin/
-
-******************************************************************/

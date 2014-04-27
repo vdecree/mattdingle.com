@@ -196,3 +196,63 @@ div[role='main'] {
 	}
 
 }
+
+.content__left{
+	@include span-columns(7);
+
+	@media screen and (max-width: $medium) {
+ 			@include fill-parent;
+ 			float: none;
+ 			@include remit("margin-bottom", 20);
+		}
+}
+
+#side__bar{
+	@include span-columns(4);
+	@include shift(1);
+	margin-right: 0;
+
+	@media screen and (max-width: $medium) {
+ 		@include fill-parent;
+ 		margin: 0;
+	}
+
+	.side__gigfeed{
+		@include remit("margin-bottom", 40);
+
+		@media screen and (max-width: $medium) {
+ 			display: none;
+		}
+		
+		ul{
+			
+			li{
+				list-style: none;
+				@include remit("margin-bottom", 10);
+				
+				p{
+					margin-bottom: 0;
+				}
+
+				time{
+					@include font-size(12);
+					color: darken($light-grey, 30);
+				}
+
+				.gig_fee{
+					color: darken($light-grey, 30);
+					@include font-size(12);
+				}
+
+			}
+
+		}
+
+	}
+
+	.btn{
+		display: block;
+		text-align: center;
+	}
+
+}

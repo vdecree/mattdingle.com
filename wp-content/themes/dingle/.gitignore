@@ -49,6 +49,8 @@ tmp/
 *.php.in
 .idea/
 temp/
+mixture.json
+.pid
 ._*
 .Trashes
 

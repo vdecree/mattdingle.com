@@ -21,6 +21,7 @@ h1,  .h1 {
 
 	@include font-size(30);
 	font-family: $openBold;
+	text-transform: uppercase;
 
 	&.prime{
 		@include font-size(96);

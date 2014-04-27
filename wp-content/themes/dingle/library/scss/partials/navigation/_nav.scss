@@ -60,8 +60,8 @@ a.menu-link {
     letter-spacing: 4px;
     color: $white;
     text-decoration: none;
-    &:focus{
-        outline: none;
+    &:focus, &:hover{
+        outline: 0;
     }
 }
 // nav[role=navigation] {
@@ -299,8 +299,9 @@ $nav-borders:    lighten($nav-background, 10%);
 
             @include media($navTrigger) {
                 //color: $nav-background;
-                &:hover{
+                &:hover, &:focus{
                     color: $comp-color;
+                    outline: none;
                 }
             }
 
