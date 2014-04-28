@@ -175,7 +175,7 @@ $nav-borders:    lighten($nav-background, 10%);
      * over the top of our nav element.
      */
     &:after {
-        content: "☰";
+        content: "\2261";
         font-size: $nav-icon-size;
         width: 1em;
         line-height: 1;

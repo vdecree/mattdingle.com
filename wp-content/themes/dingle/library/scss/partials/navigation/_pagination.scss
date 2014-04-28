@@ -15,18 +15,29 @@ Pagination Navigation
 
 */
 
-.pagination {
+.pagination{
 
-	& > li {
+	@include remit("margin-top", 30);
 
-	}
+	.page-numbers{
 
-	& > li > a {
+		li{
+			list-style:none;
+			display: inline-block;
+			vertical-align: top;
+			zoom: 1;
+			@include remit("margin-right", 5);
 
-		&:hover {
+			a{
+				text-decoration: none;
+			}
 
 		}
 
+	}
+
+	@media screen and (max-width: $smaller) {
+		@include remit("padding-left", 24);
 	}
 
 }

@@ -6,7 +6,7 @@
 	);
 
 	$field = get_field("gig_datetime");
-	$format = "dS M y";
+	$format = "dS M Y";
 	$timestamp” = get_field("gig_datetime");
 
 	// get results

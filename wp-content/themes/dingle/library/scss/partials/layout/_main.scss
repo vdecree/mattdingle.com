@@ -171,9 +171,9 @@ div[role='main'] {
 
 }
 
-@for $i from 2 through 6 {
+@for $i from 2 through 50 {
 	.gig__date-#{$i} {
-		background-color: lighten($black, 5 * $i);
+		background-color: lighten($black, 2 * $i);
 	}
 }
 
@@ -255,4 +255,88 @@ div[role='main'] {
 		text-align: center;
 	}
 
+}
+
+#gig__list__large{
+
+	//background: darken($light-grey, 10);
+
+}
+
+#gig__list__large{
+	@extend %cf;
+	//@include remit("margin-bottom", 64);
+	overflow: hidden;
+
+	div[class*="gig__date-"]{
+		width: 33.333%;
+		float: left;
+		display: block;
+		@include remit("padding-top", 24);
+		@include remit("padding-right", 24);
+		@include remit("padding-bottom", 54);
+		@include remit("padding-left", 24);
+		@include box-sizing(border-box);
+		color: $white;
+		@include remit("min-height", 200);
+		position: relative;
+
+		@media screen and (max-width: $regular) {
+ 			width: 50%;
+		}
+
+		@media screen and (max-width: $small) {
+ 			@include fill-parent;
+ 			margin: 0;
+		}
+
+		&.gig__date-1{
+			background-color: $black;
+		}
+
+		time{
+			@include font-size(14);
+			text-transform: uppercase;
+			@include remit("letter-spacing", 3);
+			color: darken($light-grey, 15);
+			display: block;
+		}
+
+		span{
+			position: absolute;
+			@include remit("bottom", 24);
+			@include remit("right", 24);
+			@include font-size(14);
+			line-height: 2;
+			margin-bottom: 0;
+			&:hover{
+				cursor: inherit;
+				background-color: $comp-color;
+			}
+		}
+
+		.gig__location{
+			font-family: $heuBold;
+			@include font-size(30);
+			@include remit("margin-bottom", 5);
+		}
+		
+	}
+
+}
+
+.gig__container{
+	@media screen and (max-width: $smaller) {
+		width: 100%;
+		max-width: none;
+		padding: 0;
+	}
+
+	h1{
+
+		@media screen and (max-width: $smaller) {
+			@include remit("padding-left", 24);
+		}
+
+	}
 }

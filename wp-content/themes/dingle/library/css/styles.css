@@ -409,11 +409,11 @@ table {
   padding: 0.2em 0;
 }
 
-.container:before, .bio__intro:before, .latest__tracks:before, #gig__list:before, .container:after, .bio__intro:after, .latest__tracks:after, #gig__list:after {
+.container:before, .bio__intro:before, .latest__tracks:before, #gig__list:before, #gig__list__large:before, .container:after, .bio__intro:after, .latest__tracks:after, #gig__list:after, #gig__list__large:after {
   content: "";
   display: table;
 }
-.container:after, .bio__intro:after, .latest__tracks:after, #gig__list:after {
+.container:after, .bio__intro:after, .latest__tracks:after, #gig__list:after, #gig__list__large:after {
   clear: both;
 }
 
@@ -748,23 +748,199 @@ div[role='main'] .container, div[role='main'] .bio__intro, div[role='main'] .lat
 }
 
 .gig__date-2 {
-  background-color: #3d3d3d;
+  background-color: #2d2d2d;
 }
 
 .gig__date-3 {
-  background-color: #494949;
+  background-color: #323232;
 }
 
 .gig__date-4 {
-  background-color: #565656;
+  background-color: #373737;
 }
 
 .gig__date-5 {
-  background-color: #636363;
+  background-color: #3d3d3d;
 }
 
 .gig__date-6 {
+  background-color: #424242;
+}
+
+.gig__date-7 {
+  background-color: #474747;
+}
+
+.gig__date-8 {
+  background-color: #4c4c4c;
+}
+
+.gig__date-9 {
+  background-color: #515151;
+}
+
+.gig__date-10 {
+  background-color: #565656;
+}
+
+.gig__date-11 {
+  background-color: #5b5b5b;
+}
+
+.gig__date-12 {
+  background-color: #606060;
+}
+
+.gig__date-13 {
+  background-color: #656565;
+}
+
+.gig__date-14 {
+  background-color: #6a6a6a;
+}
+
+.gig__date-15 {
   background-color: #707070;
+}
+
+.gig__date-16 {
+  background-color: #757575;
+}
+
+.gig__date-17 {
+  background-color: #7a7a7a;
+}
+
+.gig__date-18 {
+  background-color: #7f7f7f;
+}
+
+.gig__date-19 {
+  background-color: #848484;
+}
+
+.gig__date-20 {
+  background-color: #898989;
+}
+
+.gig__date-21 {
+  background-color: #8e8e8e;
+}
+
+.gig__date-22 {
+  background-color: #939393;
+}
+
+.gig__date-23 {
+  background-color: #989898;
+}
+
+.gig__date-24 {
+  background-color: #9d9d9d;
+}
+
+.gig__date-25 {
+  background-color: #a3a3a3;
+}
+
+.gig__date-26 {
+  background-color: #a8a8a8;
+}
+
+.gig__date-27 {
+  background-color: #adadad;
+}
+
+.gig__date-28 {
+  background-color: #b2b2b2;
+}
+
+.gig__date-29 {
+  background-color: #b7b7b7;
+}
+
+.gig__date-30 {
+  background-color: #bcbcbc;
+}
+
+.gig__date-31 {
+  background-color: #c1c1c1;
+}
+
+.gig__date-32 {
+  background-color: #c6c6c6;
+}
+
+.gig__date-33 {
+  background-color: #cbcbcb;
+}
+
+.gig__date-34 {
+  background-color: #d0d0d0;
+}
+
+.gig__date-35 {
+  background-color: #d5d5d5;
+}
+
+.gig__date-36 {
+  background-color: #dbdbdb;
+}
+
+.gig__date-37 {
+  background-color: #e0e0e0;
+}
+
+.gig__date-38 {
+  background-color: #e5e5e5;
+}
+
+.gig__date-39 {
+  background-color: #eaeaea;
+}
+
+.gig__date-40 {
+  background-color: #efefef;
+}
+
+.gig__date-41 {
+  background-color: #f4f4f4;
+}
+
+.gig__date-42 {
+  background-color: #f9f9f9;
+}
+
+.gig__date-43 {
+  background-color: #fefefe;
+}
+
+.gig__date-44 {
+  background-color: white;
+}
+
+.gig__date-45 {
+  background-color: white;
+}
+
+.gig__date-46 {
+  background-color: white;
+}
+
+.gig__date-47 {
+  background-color: white;
+}
+
+.gig__date-48 {
+  background-color: white;
+}
+
+.gig__date-49 {
+  background-color: white;
+}
+
+.gig__date-50 {
+  background-color: white;
 }
 
 .latest__tracks h2 {
@@ -859,6 +1035,98 @@ div[role='main'] .container, div[role='main'] .bio__intro, div[role='main'] .lat
 #side__bar .btn {
   display: block;
   text-align: center;
+}
+
+#gig__list__large {
+  overflow: hidden;
+}
+#gig__list__large div[class*="gig__date-"] {
+  width: 33.333%;
+  float: left;
+  display: block;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-right: 24px;
+  padding-right: 1.5rem;
+  padding-bottom: 54px;
+  padding-bottom: 3.375rem;
+  padding-left: 24px;
+  padding-left: 1.5rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: white;
+  min-height: 200px;
+  min-height: 12.5rem;
+  position: relative;
+}
+@media screen and (max-width: 900px) {
+  #gig__list__large div[class*="gig__date-"] {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #gig__list__large div[class*="gig__date-"] {
+    width: 100%;
+    margin: 0;
+  }
+}
+#gig__list__large div[class*="gig__date-"].gig__date-1 {
+  background-color: #232323;
+}
+#gig__list__large div[class*="gig__date-"] time {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  letter-spacing: 0.1875rem;
+  color: #cccccc;
+  display: block;
+}
+#gig__list__large div[class*="gig__date-"] span {
+  position: absolute;
+  bottom: 24px;
+  bottom: 1.5rem;
+  right: 24px;
+  right: 1.5rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  line-height: 2;
+  margin-bottom: 0;
+}
+#gig__list__large div[class*="gig__date-"] span:hover {
+  cursor: inherit;
+  background-color: #c69c6d;
+}
+#gig__list__large div[class*="gig__date-"] .gig__location {
+  font-family: "heuristicabold", Georgia, Times, serif;
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
+}
+
+@media screen and (max-width: 480px) {
+  .gig__container {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .gig__container h1 {
+    padding-left: 24px;
+    padding-left: 1.5rem;
+  }
 }
 
 /*
@@ -1365,7 +1633,7 @@ a.menu-link:focus, a.menu-link:hover {
   }
 }
 .nav:after {
-  content: "☰";
+  content: "\2261";
   font-size: 16px;
   width: 1em;
   line-height: 1;
@@ -1508,6 +1776,28 @@ Pagination Navigation
 </ul>
 
 */
+.pagination {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+}
+.pagination .page-numbers li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  margin-right: 5px;
+  margin-right: 0.3125rem;
+}
+.pagination .page-numbers li a {
+  text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  .pagination {
+    padding-left: 24px;
+    padding-left: 1.5rem;
+  }
+}
+
 /*
 
 Breadcrumb Navigation
