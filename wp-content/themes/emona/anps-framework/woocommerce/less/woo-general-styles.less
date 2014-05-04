@@ -1,0 +1,429 @@
+#site-inner-wrapper {
+	.clearfix;
+}
+
+.woocommerce-error, .woocommerce-message {
+	margin: 0;
+	padding: 0;
+
+	li {
+		display: inline-block;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.alert {
+		margin: 0 0 5px 0;
+	}
+}
+
+.products {
+	margin: 0;
+	padding: 0;
+
+	.star-rating {
+		.transition(.3s all ease);
+	}
+
+	.product {
+		&:hover {
+			.price {
+				margin-left: 0;
+				left: 50%;
+			}
+
+			.star-rating {
+				margin-right: -50%;
+			}
+
+			.product-hover {
+				height: 30px;
+				padding: 10px 0 17px 0;
+				bottom: -57px;
+
+				&.with-plugs {
+					height: 73px;
+					bottom: -100px;
+				}
+			}
+		}
+	}
+
+	.btn {
+		.box-sizing(border-box);
+		width: 80%;
+		padding: 10px 20px;
+		line-height: 1.3em;
+		margin: 0 0 20px 0;
+
+		&:after {
+			color: #fff;
+			content: "...";
+			font-size: 24px;
+			opacity: 0;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin: -15px 0 0 -9px;
+		}
+	}
+
+	.btn.loading {
+		&:before {
+			font-size: 24px;
+			width: 100%;
+		}
+
+		&:after {
+			opacity: 1;
+			.transition(.1s opacity linear);
+		}
+	}
+
+	.btn.added {
+		.transition(none);
+		background-image: url(images/product_added.png);
+		background-position: 90% 49%;
+		background-repeat: no-repeat;
+	}
+}
+
+.product {
+	list-style: none;
+	padding-bottom: 10px;
+	margin-top: 25px;
+	position: relative;
+
+	img {
+		border: 1px solid #f2f2f2;
+		.border-box;
+		width: 100%;
+	}
+
+	h3 {
+		border: none;
+		color: #fff;
+		font-size: 14px;
+		text-align: center;
+		margin: 0;
+		padding: 13px 23px 13px 15px;
+		position: relative;
+		z-index: 100;
+
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;		
+	}
+
+	.price-rating {
+		display: block;
+		position: relative;
+		overflow: hidden;
+		z-index: 100;
+		padding: 18px 0 5px 0;
+		min-height: 46px;
+	}
+
+	.price {
+		position: relative;
+		margin-left: 16px;
+		float: left;
+
+		ins, .amount {
+			font-size: 24px;
+			text-decoration: none;
+		}
+
+		del .amount {
+			font-size: 14px;
+		}
+		.transition(.3s all ease);
+	}
+
+	.accordionfalse, .accordiontrue {
+		margin-top: 40px;
+	}
+
+	.star-rating {
+		margin-top: 2px !important;
+		float: right !important;
+		overflow: hidden;
+	}
+
+	.product-hover {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 0;
+		z-index: 99;
+		text-align: center;
+		overflow: hidden;
+		padding: 0;
+
+		.transition(.2s all linear);
+	}
+
+	.added_to_cart {
+		display: none;
+	}
+}
+
+.products {
+	@media (max-width: 979px) {
+
+		.price, .star-rating {
+			display: block;
+			float: none !important;
+			text-align: center;
+			margin: 0  !important;
+			left: auto !important;
+		}
+
+		.price {
+			width: 100%;
+		}
+
+		.star-rating {
+			margin: 0 auto 10px auto !important;
+			width: 85px !important;
+		}
+
+	}
+}
+
+@media (max-width: 540px) {
+
+	.woocommerce-ordering, .woocommerce-ordering select {
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+
+	.woocommerce-ordering select {
+		margin-bottom: 15px;
+	}
+
+	.woocommerce-result-count, .widget_price_filter {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	 .products { 
+		.span3 {
+			width: 100%;
+		}
+	}
+}
+
+.span6 {
+
+	.woocommerce-ordering, .woocommerce-ordering select {
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+
+	.woocommerce-ordering select {
+		margin-bottom: 15px;
+	}
+
+	.woocommerce-result-count, .widget_price_filter {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	 .products { 
+		.span3 {
+			width: 100%;
+		}
+	}
+}
+
+.span9 .products {
+
+	.price, .star-rating {
+		display: block;
+		float: none !important;
+		text-align: center;
+		margin: 0  !important;
+		left: auto !important;
+	}
+
+	.price {
+		width: 100%;
+	}
+
+	.star-rating {
+		margin: 0 auto 10px auto !important;
+		width: 85px !important;
+	}
+
+	@media (max-width: 979px) {
+		.btn {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			margin: -10px 0 10px 0;
+			padding-left: 15px !important;			
+		}
+	}
+}
+
+.product.faded {
+	opacity: .3;
+}
+
+.product.first {
+	margin-left: 0 !important;
+}
+
+.woocommerce-result-count {
+	margin: 5px 0 0 0;
+}
+
+/* Pagination */
+
+.woocommerce-pagination {
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		list-style: none;
+		float: left;
+
+		&:after {
+			content: "/";
+		}
+
+		a, span {
+			display: inline-block;
+			padding: 20px 10px;
+		}
+	}
+
+	.prev {
+		padding-left: 0;
+	}
+
+	.next {
+		margin-left: 10px;
+	}
+
+	li.no:after {
+		display: none;
+	}
+}
+
+/* WhishList */
+
+.product {
+
+	.yith-wcwl-add-to-wishlist, .compare {
+		position: absolute;
+		top: 2px;
+		overflow: hidden;
+	}
+
+	.yith-wcwl-add-to-wishlist a, .compare {
+		display: block;
+		width: 44px;
+		height: 44px;
+	}
+
+	.summary .yith-wcwl-add-to-wishlist a, .summary .compare {
+		@media (max-width: 460px) {
+			display: none;
+		}
+	}
+
+	.yith-wcwl-add-to-wishlist {
+		margin: 0 !important;
+		right: 50px;
+
+		a {
+			background: url(images/wishlist.png) center no-repeat;
+		}
+	}
+
+	.compare {
+		background: url(images/compare.png) center no-repeat;
+		right: 10px;
+	}
+
+}
+
+/* Sale */
+
+.onsale {
+	color: #fff;
+	padding: 13px 9px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/* Quantity inputs */
+
+.cart {
+
+	.clearfix();
+	margin-bottom: 20px;
+
+	.quantity, #content .quantity {
+
+		input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+			display:none;
+		}
+
+		.plus, .minus, input.qty {
+			border: none;
+			.border-radius(0);
+			.box-shadow(none);
+			float: left;
+			height: 42px;
+			padding: 10px 20px;
+			position: relative;
+			z-index: 2;
+		}
+
+		input.qty {
+			text-align: center;
+			margin: 0 1px;
+			padding: 10px 15px;
+			width: 2em;
+			height: 22px;
+		}
+
+		.plus {
+			margin-right: 28px;
+		}
+	}
+
+	.btn {
+		float: left;
+
+		@media (max-width: 475px) {
+			clear: both;
+			margin: 20px 0;
+		}
+	}
+}
+
+/* Shop page OrderBy */
+
+.shop-filters {
+	.clearfix;
+	padding: 26px 27px 16px 27px;
+
+	.woocommerce-ordering {
+		float: right;
+		margin: 0;
+	}
+}

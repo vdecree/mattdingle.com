@@ -642,7 +642,7 @@ div[role='main'] .container, div[role='main'] .bio__intro, div[role='main'] .lat
   }
 }
 @media screen and (max-width: 760px) {
-  .bio__intro .bio__desc .btn {
+  .bio__intro .bio__desc .btn, .bio__intro .bio__desc .wpcf7 .inputfield .wpcf7-submit, .wpcf7 .inputfield .bio__intro .bio__desc .wpcf7-submit {
     margin: 0 auto;
     display: block;
     text-align: center;
@@ -1032,7 +1032,7 @@ div[role='main'] .container, div[role='main'] .bio__intro, div[role='main'] .lat
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
-#side__bar .btn {
+#side__bar .btn, #side__bar .wpcf7 .inputfield .wpcf7-submit, .wpcf7 .inputfield #side__bar .wpcf7-submit {
   display: block;
   text-align: center;
 }
@@ -1129,6 +1129,10 @@ div[role='main'] .container, div[role='main'] .bio__intro, div[role='main'] .lat
   }
 }
 
+.wpcf7-form {
+  margin: 0;
+}
+
 /*
 
 Aside
@@ -1190,7 +1194,7 @@ footer[role="footer"] .gig__feed--mini .gig__fee {
   margin-bottom: 0;
   cursor: text;
 }
-footer[role="footer"] .gig__feed--mini .btn:hover {
+footer[role="footer"] .gig__feed--mini .btn:hover, footer[role="footer"] .gig__feed--mini .wpcf7 .inputfield .wpcf7-submit:hover, .wpcf7 .inputfield footer[role="footer"] .gig__feed--mini .wpcf7-submit:hover {
   background-color: #c69c6d;
 }
 footer[role="footer"] .gig__feed--mini .gig__location {
@@ -1853,7 +1857,7 @@ Media Objects
 </div>
 
 */
-.btn {
+.btn, .wpcf7 .inputfield .wpcf7-submit {
   display: inline-block;
   vertical-align: middle;
   white-space: nowrap;
@@ -1868,33 +1872,33 @@ Media Objects
   overflow: visible;
   text-decoration: none;
 }
-.btn:hover, .btn:active, .btn:focus, .btn:visited {
+.btn:hover, .wpcf7 .inputfield .wpcf7-submit:hover, .btn:active, .wpcf7 .inputfield .wpcf7-submit:active, .btn:focus, .wpcf7 .inputfield .wpcf7-submit:focus, .btn:visited, .wpcf7 .inputfield .wpcf7-submit:visited {
   text-decoration: none;
 }
-.btn:active, .btn:focus {
+.btn:active, .wpcf7 .inputfield .wpcf7-submit:active, .btn:focus, .wpcf7 .inputfield .wpcf7-submit:focus {
   outline: none;
 }
-.btn::-moz-focus-inner {
+.btn::-moz-focus-inner, .wpcf7 .inputfield .wpcf7-submit::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-.btn.btn--med {
+.btn.btn--med, .wpcf7 .inputfield .wpcf7-submit {
   padding: 0 1em;
   line-height: 3;
   height: 3em;
 }
-.btn.btn--small {
+.btn.btn--small, .wpcf7 .inputfield .btn--small.wpcf7-submit {
   padding: 0 0.5em;
   line-height: 2;
   height: 2em;
 }
-.btn.btn--gold {
+.btn.btn--gold, .wpcf7 .inputfield .wpcf7-submit {
   background-color: #c69c6d;
   color: white;
   text-transform: uppercase;
   font-family: "open_sansbold", Arial, Helvetica, sans-serif;
 }
-.btn.btn--gold:hover {
+.btn.btn--gold:hover, .wpcf7 .inputfield .wpcf7-submit:hover {
   background-color: #93693a;
 }
 
@@ -1944,6 +1948,45 @@ Forms
 </form>
 
 */
+.wpcf7 {
+  width: 100%;
+}
+.wpcf7 .wpcf7-display-none {
+  margin: 0;
+  padding: 0;
+  color: Tomato;
+  border: 0;
+  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
+}
+.wpcf7 .inputfield {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+}
+.wpcf7 .inputfield span {
+  width: 100%;
+}
+.wpcf7 .inputfield span.wpcf7-not-valid-tip {
+  color: Tomato;
+}
+.wpcf7 .inputfield input, .wpcf7 .inputfield textarea {
+  width: 100%;
+  padding: 10px;
+  padding: 0.625rem;
+  border: 1px solid #d8d8d8;
+  -webkit-appearance: none;
+}
+.wpcf7 .inputfield .wpcf7-submit {
+  display: inline-block;
+  width: auto;
+}
+
+.wpcf7-form {
+  padding: 20px;
+  padding: 1.25rem;
+}
+
 /*
 
 Search Forms

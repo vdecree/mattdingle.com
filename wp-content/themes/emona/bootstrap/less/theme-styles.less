@@ -1,0 +1,246 @@
+/* =Colors
+-------------------------------------------------------------- */
+
+@primary-color: #0ea7c3;
+@hover-color: #13bfdf;
+@headings-color: #000;
+@text-color: #444;
+@services-price: #adeaf5;
+@background-color: #fff;
+
+/* Text Color */
+
+body {
+    background-color: @background-color;
+    color: @text-color;
+}
+
+/* Heading Color */
+
+a,
+h1, h2, h3, h4, h5, h6,
+.services div li {
+    color: @headings-color;
+}
+
+.site-header .mobile-nav span {
+    background-color: @headings-color;
+}
+
+/* Primary Color */
+
+a:hover,
+.icon:hover h2,
+.icon .glyphicon:before,
+.icon-group .icon:hover .glyphicon:before,
+.featured-heading,
+.color,
+.btn-style-2,
+.site-footer .menu li a:hover,
+.radial-progress-bar canvas,
+.sidebar a:hover,
+.shoutbox h1,
+.quote,
+.services div .glyphicon,
+.twitter a,
+.posts .post-meta .author span, 
+.persons .post-meta .author span,
+.persons li a .open,
+.sidebar .rfc_widget button:hover,
+.services > ul > li button:hover,
+.services > ul > li.selected button {
+    color: @primary-color;
+}
+
+input[type=checkbox]:checked + label:after {
+    color: @primary-color;   
+}
+
+.icon:hover .glyphicon,
+.icon:after,
+.featured-heading span:before,
+.featured-heading span:after,
+.btn-style-1,
+.btn-style-2:hover,
+.social-bookmarks li a,
+.nav-tabs li a,
+.nav-tabs li.active a:after,
+.panel-group .panel .panel-title a:after,
+.author span,
+.comment-list li header span,
+.sidebar .widget_search input[type="submit"],
+.services div h1,
+.twitter span,
+.posts .post-meta, 
+.persons .post-meta,
+.filter li button:hover,
+.filter li button.selected,
+div.light_square .pp_close,
+.box,
+.move-slider h1 em {
+    background-color: @primary-color;
+}
+
+input[type=radio]:checked + label:after {
+    background-color: @primary-color;
+}
+
+
+@media (min-width: 889px) {
+    .navigation {
+        > ul > li .sub-menu .current-menu-item > a, a:hover {
+            color: @primary-color;
+        }
+
+        > ul > li.current-menu-item > a {
+            background-color: @primary-color;
+        }
+    }
+}
+
+@media (max-width: 888px) {
+    .navigation {
+        li {
+            color: @primary-color;
+        }
+
+        a:before {
+            background-color: @primary-color;
+        }
+    }
+}
+
+.icon {
+    .glyphicon {
+        border: 7px solid @primary-color;
+
+        &:after {
+            border: 4px solid @primary-color;
+        }
+    }
+}
+
+.select-wrap:before {
+    border-top: 4px solid @primary-color;
+}
+
+.btn-style-2 {
+    border: 1px solid @primary-color;
+
+    &:after {
+        border: 4px solid @primary-color;
+    }
+}
+
+.author {
+    img {
+        border: 6px solid @primary-color;
+    }
+}
+
+.social-bookmarks li a:hover {
+    background-color: @primary-color;
+    background-color: darken(@primary-color, 7%);
+}
+
+.posts, .persons {
+    .post-meta {
+        background-color: @primary-color;
+        background-color: fade(@primary-color, 90%);
+    }
+}
+
+.site-footer .copyright {
+    background-color: @primary-color;
+    background-color: fade(@primary-color, 50%);
+}
+
+/* Hover Color */
+
+.btn-style-2 {
+    &:hover, &:hover:after {
+        border-color: @hover-color;
+    }
+}
+
+.nav-tabs li a:hover,
+.btn-style-1:hover,
+.sidebar .widget_search input[type="text"]  {
+    background-color: @hover-color;
+}
+
+/* Services Price Color */
+
+.services div h1 span {
+    color: @services-price;
+}
+
+/* Background Color */
+
+.site-header,
+.featured-heading span,
+.persons li {
+    background-color: @background-color;
+    background-color: fade(@background-color, 95%);
+}
+
+/* =Font Families
+-------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('fonts/bebas/BebasNeue-webfont.eot');
+    src: url('fonts/bebas/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bebas/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/bebas/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/bebas/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'JustVector';
+    src: url('fonts/justvectorv2/justvectorv2-webfont.eot');
+    src: url('fonts/justvectorv2/justvectorv2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/justvectorv2/justvectorv2-webfont.woff') format('woff'),
+         url('fonts/justvectorv2/justvectorv2-webfont.ttf') format('truetype'),
+         url('fonts/justvectorv2/justvectorv2-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@body-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@header-font-family: "Bebas", Arial;
+@featured-font-family: 'Open Sans', Arial, Helvetica;
+
+body,
+input[type="text"], textarea, select,
+.comment-list li header h1 {
+    font-family: @body-font-family;
+}
+
+h1, h2, h3, h4, h5,
+.btn-style-1,
+.radial-progress-bar,
+.sidebar .widget_tag_cloud a,
+.sidebar .rfc_widget li,
+.services div li,
+.persons li a .open {
+    font-family: @header-font-family
+}
+
+.site-header,
+.statement h2, .twitter-feed h2, .contact-info h2,
+.statement h3, .twitter-feed h3, .contact-info h3,
+.statement, .twitter-feed, .contact-info, .header-quote,
+.btn-style-2,
+.site-footer,
+.panel-group .panel .panel-title a:after,
+.shoutbox h2,
+.twitter,
+.filter li button,
+.move-slider h2 {
+    font-family: @featured-font-family;
+}

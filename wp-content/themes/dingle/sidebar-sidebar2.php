@@ -15,7 +15,7 @@
 
 <div id="side__bar">
 	<div class="side__gigfeed">
-		<h3>Latest Gigs</h3>
+		<h3>Upcoming Gigs</h3>
 		<ul>
 			<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 			<li>
@@ -28,8 +28,15 @@
 			<?php endwhile; ?>
 		</ul>
 	</div> <!-- end gigfeed -->
+	<?php if ( is_page(69) ) { ?>
+
+	<!-- do nothing -->
+	
+	<?php } else { ?>
 
 	<div class="button__group">
 		<a href="#" class="btn btn--med btn--gold">Get in touch</a>
 	</div>
+
+	<?php } ?>
 </div> <!-- end sidebar -->

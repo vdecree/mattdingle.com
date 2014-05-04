@@ -123,3 +123,48 @@ textarea {
 	}
 }
 
+.wpcf7{
+	width: 100%;
+
+	.wpcf7-display-none{
+		margin: 0;
+		padding: 0;
+		color: Tomato;
+		border: 0;
+		@include remit("margin-bottom", 15);
+	}
+
+	.inputfield{
+		width: 100%;
+		@include remit("margin-bottom", 10);
+
+		span{
+			width: 100%;
+
+			&.wpcf7-not-valid-tip{
+				color: Tomato;
+			}
+		}
+
+		input, textarea{
+			width: 100%;
+			@include remit("padding", 10);
+			border: 1px solid darken($light-grey, 10);
+			-webkit-appearance: none;
+		}
+
+		.wpcf7-submit{
+			@extend .btn;
+			@extend .btn--gold;
+			@extend .btn--med;
+			display: inline-block;
+			width: auto;
+		}
+
+	}
+
+}
+
+.wpcf7-form{
+	@include remit("padding", 20);
+}
